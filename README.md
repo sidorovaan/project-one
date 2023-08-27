@@ -33,10 +33,10 @@ Git преобразует информацию о коммитах с помо�
 ### Типичный жизненный цикл файла в Git
 ```mermaid
   graph TD;
-      untracked-->staged (в списке на коммит) tracked: git add
-      modified-->staged (в списке на коммит) tracked: git add
-      staged (в списке на коммит) tracked-->tracked: git commit
-      tracked-->modified: изменения
+      untracked-->staged (в списке на коммит) tracked;
+      modified-->staged (в списке на коммит) tracked;
+      staged (в списке на коммит) tracked-->tracked;
+      tracked-->modified;
 ```
 
 
