@@ -32,12 +32,13 @@ Git преобразует информацию о коммитах с помо�
 
 ### Типичный жизненный цикл файла в Git
 
+
 ```mermaid
-flowchart TD
-      A[untracked] -- git add --> B{staged (в списке на коммит) tracked};
-      C[modified]-- git add --> B;
-      B -- git commit --> D[tracked];
-      D -- changes --> C;
+graph LR;
+      untracked -- "git add" --> staged/tracked;
+      modified -- "git add" --> staged/tracked;
+      staged/tracked -- "git commit" --> tracked;
+      tracked -- "changes" --> modified;
 ```
 
 
